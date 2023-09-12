@@ -27,7 +27,8 @@
 function nabeatsu()
 {
     // この関数内に処理を記述
-    for ($i = 1; $i < 16; $i++) {
+    $num = 16;
+    for ($i = 1; $i < $num ; $i++) {
         if (($i % 3 === 0) && ($i % 5 === 0)) {
             echo $i;
             echo 'アホわん';

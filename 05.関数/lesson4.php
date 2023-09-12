@@ -25,6 +25,7 @@ function calc($yen, $product) {
     // 支払いが足りない時の処理
     if ($yen < $product){
         echo ($product - $yen).'円足りません';
+        exit;
     }
 
     // お釣り処理
