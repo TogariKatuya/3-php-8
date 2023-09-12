@@ -22,12 +22,11 @@
 // 13
 // 14
 // 15 アホわん
-
-
-function nabeatsu($i)
-{
+$num = 15;
+function nabeatsu($num){
     // この関数内に処理を記述
-    for ($i = 1; $i <= $i ; $i++) {
+    
+    for ($i = 1; $i <= $num ; $i++) {
         if (($i % 3 === 0) && ($i % 5 === 0)) {
             echo $i;
             echo 'アホわん';
@@ -46,7 +45,6 @@ function nabeatsu($i)
         }
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -57,7 +55,7 @@ function nabeatsu($i)
 <body>
     <section>
         <!-- ここに結果表示 -->
-        <?php nabeatsu($i)?>
+        <?php nabeatsu($num)?>
     </section>
 </body>
 </html>
